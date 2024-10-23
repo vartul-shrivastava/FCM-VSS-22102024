@@ -36,3 +36,9 @@
 2. **Install requirements.txt to configure all the dependencies**
     ```bash
     pip install -r requirement.txt
+
+3. **Navigate to the app directory**
+  ```bash
+    cd FCM-VSS-22102024
+
+4. Run app.py to invoke FCM-VSS in your desired python environment where requirements are fulfilled.
