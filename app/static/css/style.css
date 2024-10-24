@@ -10,6 +10,10 @@ body {
     font-style: normal;
 }
 
+#fixation-stats-container{
+    text-align: center;
+}
+
 h2 {
     color: #5482be;
 }
@@ -28,7 +32,7 @@ h2 {
     border: 1px solid #5482be; /* Light white border */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Subtle shadow */
     color: #5482be;
-    padding: 5px;
+    padding: 10px;
     border-radius: 15px; /* Rounded corners for a soft look */
     text-align: center; /* Center the text */
     font-size: 14px; /* Adjust the font size */
@@ -749,6 +753,7 @@ nav {
     text-align: center;
 }
 
+
 .wm-container, .ns-container {
     margin: 0 auto;
     overflow-x: auto;
@@ -756,7 +761,7 @@ nav {
     max-width: 50%;
     max-height: 500px;
     text-align: center;
-    margin-top: 20px; /* Add space between the canvas and the table */
+    margin-top: 10px; /* Add space between the canvas and the table */
     justify-content: center;
     align-items: center;
     flex-direction: column;

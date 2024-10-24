@@ -232,9 +232,8 @@
         <!-- Node statistics table below the canvas -->
 <!-- Node statistics table below the canvas -->
 <div id="node-stats-container">
-    <p style="margin: 0 auto; padding: 0 25%;">To create a directed edge, select the driving node (which will turn blue), and then seelct the receiving node (which will turn purple). Then click 'Add Node' or Ctrl + E to give a value and click ok.</p>
-    <h2 style="margin-top: 10px;">Node Statistics</h2>
-    <p style="margin: 0 auto; padding: 0 25%;">The Node Statistics Table provides the number of indegree (incoming connections), outdegree (outgoing connections), centrality (importance in the network), and their respective values, indicating the type of node (e.g., driver, intermediary, receiver or NA).</p>
+    <p style="margin: 0 auto; padding: 0 25%;"><strong>Edge Creation: </strong> create a directed edge, select the driving node (which will turn blue), and then seelct the receiving node (which will turn purple). Then click 'Add Node' or Ctrl + E to give a value and click ok.</p>
+    <p style="margin: 25px auto; padding: 0 25%;"><strong>Node Statistics Table</strong> provides the number of indegree (incoming connections), outdegree (outgoing connections), centrality (importance in the network), and their respective values, indicating the type of node (e.g., driver, intermediary, receiver or NA).</p>
     <button onclick="downloadTableAsCSV('node-stats-table')">Download Node Stats as CSV</button>
     <div class="ns-container">
         <table id="node-stats-table" border="1">
@@ -256,11 +255,8 @@
         </table>
         
     </div>
-    
 
-    <!-- Weight Matrix Table -->
-    <h2>Weight Matrix</h2>
-    <p style="margin: 0 auto; padding: 0 25%;">The Weight Matrix displays the strength of influence between nodes, with each cell representing the weight of the connection from one node to another, highlighting the directional impact within the Fuzzy Cognitive Map.</p>
+    <p style="margin: 10px auto; padding: 0 25%;"><strong> The Weight Matrix</strong> displays the strength of influence between nodes, with each cell representing the weight of the connection from one node to another, highlighting the directional impact within the Fuzzy Cognitive Map.</p>
     <button onclick="downloadTableAsCSV('weight-matrix-table')">Download Weight Matrix as CSV</button>
     <div class="wm-container">
         <table id="weight-matrix-table" border="1">
@@ -283,6 +279,8 @@
             <canvas id="kosko-line-chart" width="400" height="200"></canvas>    
         </div>
         <div class="kosko-table-container">
+            <h2>Kosko Simulation</h2>
+        <p style="margin: 0 auto; padding: 2% 25%;">Select the condiguration for Kosko Analysis from simulation menu on bottom of the panel. The line chart represents the activation values of each concept at an iteration (hover on the chart to see). </p>
             <table id="kosko-results-table" border="1">
                 <thead>
                     <tr>
@@ -295,6 +293,8 @@
             </table>
         </div>
         <div class="fixation-table-container">
+            <h2 style="margin: 10px auto;">Static Node(s) Convergence Analysis</h2>
+            <p style="margin: 0 auto; padding: 2% 25%;"><strong>(Before performing What-if analysis, run Kosko simulation first)</strong>Nodes that you have selected as static concepts have now undergone Kosko simulation (The bar chart represents the difference in stable values achieved at static node convergence and original kosko convergence)</p>
             <table id="fixation-results-table" border="1" cellspacing="0" cellpadding="5">
                 <thead>
                     <tr>
@@ -360,24 +360,8 @@
             <!-- Node fields dynamically populated -->
         </div>
     </div>
-</div>
-
-
-        
+</div>   
     </div>
-    <div id="fixation-stats-container">
-        <table id="fixation-table" border="1">
-            <thead>
-                <tr>
-                    <th>Iteration</th>
-                    <!-- Dynamically insert node headers here -->
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Rows for each iteration will be dynamically inserted here -->
-            </tbody>
-        </table>
-        <div id="table-container"></div>
         
     </div>
     <div id="popup"><h1>Warning: Screen size is below 500px!</h1>
