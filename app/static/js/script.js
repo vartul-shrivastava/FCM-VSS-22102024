@@ -654,6 +654,10 @@ function addEdge() {
         alert("Edge value cannot be zero.");
         return;
     }
+    else if (edgeValue > 1 || edgeValue < -1) {
+        alert("Set Edge value only within [-1,1] inclusively");
+        return;
+    }
 
     const edgeColor = parseFloat(edgeValue) < 0 ? 'red' : 'green';
 
